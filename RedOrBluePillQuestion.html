@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<script src="http://www.youtube.com/player_api"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<iframe id="player" type="text/html" width="" height=""
+  src="http://www.youtube.com/embed/e2b-UbJuONE?rel=0&amp;start=238&amp;end=269"
+  frameborder="0" allowscriptaccess="always"></iframe>
+<style>
+    body{
+        margin: 0; /* Remove default margin */
+    }
+    iframe{
+        display: block;  /* iframes are inline by default */
+        height: 100vh;  /* Set height to 100% of the viewport height */
+        width: 100vw;  /* Set width to 100% of the viewport width */
+        border: none; /* Remove default border */
+        background: lightyellow; /* Just for styling */
+    }
+    p {
+  opacity: 0;
+    }
+</style>
+<script>
+ var timeleft = 36;
+  var downloadTimer = setInterval(function () {
+    document.getElementById("countdown").innerHTML = `${timeleft} seconds left`;
+    timeleft -= 1;
+    if (timeleft <= 0) {
+      clearInterval(downloadTimer);
+      $('#player').remove();
+      window.location.replace("blueorredworking.html");
+    }
+  }, 1000);
+</script>
+<p id="countdown">Countdown Beginning</p>
+</html>

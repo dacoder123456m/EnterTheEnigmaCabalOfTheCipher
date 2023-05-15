@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<body>
+<style>
+body {
+  background-color: orange;
+}
+div {
+  margin: 0 auto;
+}
+h1 {
+  font-size: 20px;
+  font-weight: bold;
+}
+h2 {
+font-size: 16px;
+font-weight: bold;
+}
+div > div {
+margin-left: 10px;
+margin-right: 10px;
+}
+</style>
+<div style="text-align: center;">
+  <h1>There Is No Going Back, Which Pill Shall YOU Take?</h1>
+  <div>
+    <div style="display: inline-block; padding: 10px; border: 1px solid black;" id="answer1">
+      <h2>The Red Pill</h2>
+    </div>
+    <div style="display: inline-block; padding: 10px; border: 1px solid black;" id="answer2">
+      <h2>The Blue Pill</h2>
+    </div>
+  </div>
+</div>
+<script>
+  // code to handle the selection of an answer
+  const answer1 = document.querySelector('#answer1');
+  const answer2 = document.querySelector('#answer2');
+
+  answer1.addEventListener('click', () => {
+    alert("You have picked the right choice you shall now escape the matrix once and for all go to this google doc made by Gavin Dolan/The Owner and creator of: 'The Enigma Cabal Of The Cipher And The Owner And Creator Of The Secret Society.'")
+    alert("If It Says That You Need Access Email My Coworker At This Email: 28philowe@molineschools.org I don't check my email to give people access but he does.");
+    window.location.replace("https://docs.google.com/document/d/1R2O4Z7Ebfy0VA9lQL0KL6eOgY4VAD6r1V3LOY0m-E10/edit");
+  });
+
+  answer2.addEventListener('click', () => {
+    alert("So you decided to be weak bye bye npc there is no going back. --->")
+    window.location.replace("http://google.com");
+  });
+</script>
+</body>
+</html>
